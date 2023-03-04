@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İTÜ-Okçuluk</title>
+    <link rel="icon" href="{{url_for('static', filename='img/itu_logo.png')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/homepage.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="body_left">
+        <div class="header">
+            <div class="header-left">
+                <h4>Okçuluk Kulübü</h4>
+                <h3>İstanbul Teknik Üniversitesi</h3>
+            </div>
+            <div class="logo">
+                <!--img src="{{url_for('static', filename='img/arrows.png')}}"-->
+                
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><form action="/"><button class="home">Home</button></form></li>
+                <li><form action="/upload"><button class="upload">Upload</button></form></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="https://instagram.com/ituokculuk?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ITUOkculukKulubu/?locale=tr_TR"><i class="fa fa-facebook"></i></a>
+        </div>
+        
+    </div>
+
+    <div class="body_right">
+        <div class="main">
+            <div class="main-right">
+                <img src="{{url_for('static', filename='img/removed_ok.png')}}">
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İTÜ-Okçuluk</title>
+    <link rel="icon" href="{{url_for('static', filename='img/itu_logo.png')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/uploadpage.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="body_left">
+        <div class="header">
+            <div class="header-left">
+                <h4>Okçuluk Kulübü</h4>
+                <h3>İstanbul Teknik Üniversitesi</h3>
+            </div>
+            <div class="logo">
+                <!--img src="{{url_for('static', filename='img/arrows.png')}}"-->
+                
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><form action="/"><button class="home">Home</button></form></li>
+                <li><form action="/upload"><button class="upload">Upload</button></form></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="https://instagram.com/ituokculuk?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ITUOkculukKulubu/?locale=tr_TR"><i class="fa fa-facebook"></i></a>
+        </div>
+    </div>
+
+    <div class="body_right">
+        
+        <div class="main-right">
+            <form action="/getfile" method="POST"  enctype="multipart/form-data">
+                <div class="inputfield">
+                    <label for="excel_file">Dosyayı seçiniz (.xls, .xlsx) : &nbsp;</label>
+                    <input class="excel_file" type="file" accept=".xls, .xlsx" name="file" required/>
+                </div>
+                
+                <button id="submit">Gönder</button>
+
+                <div class="output_table">
+                    <div class="upload_file">
+                        <i class="fa fa-file"></i>
+                        <p>{{sheet}}</p>
+                        <a role="button" href="{{url_for('download_file')}}" download> Download </a>
+                    </div>
+                </div>
+            </form>
+        </div>    
+    </div>
+</body>
+</html>

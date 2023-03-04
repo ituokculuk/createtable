@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(202, 202, 202, 0.774);
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;    
+}
+
+/* ---------------------------------- NAV ------------------------------------ */
+.body_left{
+    background-color: rgb(16, 16, 16);
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 2px 7px rgb(136, 136, 136);
+}
+
+.header{
+    margin-top: 30px;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Yatra One', cursive;
+    letter-spacing: 0.8px;
+    color: rgb(225, 223, 223);
+}
+
+.header-left{
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-left h3{
+    font-size: 10px;
+}
+.header-left h4{
+    border-bottom: 1px solid rgb(225, 223, 223);
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.body_left nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.body_left nav ul{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.body_left nav li{
+    margin-bottom: 40px;
+    list-style: none;
+}
+
+.body_left nav li button{
+    color: rgb(255, 255, 255);
+    border: transparent;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.upload{
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.home{
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.icons{
+    height: 7%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icons a{
+    color: white;
+    font-size: 18px;
+}
+/* ---------------------------------- MAIN ------------------------------------ */
+.body_right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-right{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(241, 241, 240);
+    width: 95%;
+    height: 95%;
+
+}
+
+.main-right form{
+    margin-top: 10px;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit{
+    margin-top: 17px;
+    width: 62%;
+}
+
+
+.output_table{
+    width: 100%;
+    border-top: 1px solid black;
+    margin-top: 60px;
+}
+
+.upload_file{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.output_table i{
+    font-size: 22px;
+}
+
+.output_table p{
+    margin-left: 7px;
+}
+
+.output_table a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+/* ---------------------------------- HOVER ------------------------------------ */
+.home:hover{
+    transition: 0.3s;
+    font-size: 19px;
+}
+
+.output_table a:hover{
+    color: rgb(129, 129, 129);
+}
+
+/* <!-- {% for row in range(1, sheet.max_row + 1) %}
+                    <tr>
+                        {% for col in range(1, sheet.max_column + 1): %}
+                        <td>{{ sheet.cell(row, col).value }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %} -->*/
